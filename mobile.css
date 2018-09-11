@@ -1,0 +1,83 @@
+* {
+    hộp kích thước : hộp biên giới ;
+}
+.row :: sau {
+    nội dung : " " ;
+    rõ ràng : cả hai ;
+    hiển thị : bảng ;
+}
+[ class * = " col- " ] {
+    float : trái ;
+    đệm : 15 px ;
+}
+
+.header {
+    màu nền : # 9933cc ;
+    màu sắc : #ffffff ;
+    đệm : 15 px ;
+}
+.menu  ul {
+    list-style-type : none ;
+    lề : 0 ;
+    padding : 0 ;
+}
+.menu  li {
+    đệm : 8 px ;
+    margin-bottom : 7 px ;
+    màu nền : # 33b5e5 ;
+    màu sắc : #ffffff ;
+  
+}
+.menu  li : hover {
+    màu nền : # 0099cc ;
+}
+.aside {
+
+    màu nền : # 33b5e5 ;
+    đệm : 15 px ;
+    màu sắc : #ffffff ;
+    text-align : center ;
+    kích thước phông chữ : 14 px ;
+   
+}
+.footer {
+    màu nền : # 0099cc ;
+    màu sắc : #ffffff ;
+    text-align : center ;
+    kích thước phông chữ : 12 px ;
+    đệm : 15 px ;
+}
+/ * Đối với điện thoại di động: * /
+[ class * = " col- " ] {
+    chiều rộng : 100 % ;
+}
+@media  chỉ  màn hình  và ( chiều rộng tối thiểu : 600 px ) {
+    / * Đối với máy tính bảng: * /
+   .col-s-1 { chiều rộng : 8,33 % ;}
+    .col-s-2 { width : 16.66 % ;}
+    .col-s-3 { width : 25 % ;}
+    .col-s-4 { chiều rộng : 33,33 % ;}
+    .col-s-5 { chiều rộng : 41,66 % ;}
+    .col-s-6 { width : 50 % ;}
+    .col-s-7 { chiều rộng : 58,33 % ;}
+    .col-s-8 { chiều rộng : 66,66 % ;}
+    .col-s-9 { width : 75 % ;}
+    .col-s-10 { chiều rộng : 83,33 % ;}
+    .col-s-11 { chiều rộng : 91,66 % ;}
+    .col-s-12 { width : 100 % ;}
+}
+@media  chỉ  màn hình  và ( chiều rộng tối thiểu : 768 px ) {
+    / * Đối với máy tính để bàn: * /
+    .col-1 { width : 8.33 % ;}
+    .col-2 { width : 16.66 % ;}
+    .col-3 { width : 25 % ;}
+    .col-4 { width : 33,33 % ;}
+    .col-5 { chiều rộng : 41,66 % ;}
+    .col-6 { width : 50 % ;}
+    .col-7 { width : 58.33 % ;}
+    .col-8 { chiều rộng : 66,66 % ;}
+    .col-9 { width : 75 % ;}
+    .col-10 { chiều rộng : 83,33 % ;}
+    .col-11 { chiều rộng : 91,66 % ;}
+    .col-12 { width : 100 % ;}
+}

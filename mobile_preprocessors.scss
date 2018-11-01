@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+  
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+   
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+	@for $i from 1 through 12 {
+	  .col-s-#{$i} { width: 8.333333333333% * $i; }
+	}
+}
+@media only screen and (min-width: 768px) {
+	@for $i from 1 through 12 {.col-#{$i}{width:8.333333333333% * $i; }
+	}
+}
+.content{background-color: yellow;
+	border: 15px solid white;
+}
